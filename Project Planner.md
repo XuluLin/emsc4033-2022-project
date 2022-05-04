@@ -18,7 +18,7 @@ In one to two sentences, explain the background, the broad goals of the project 
     -Goal 1: break down each source code into different sub-tasks and decode with examples
     -Goal 2: explain the function calls with examples(often called from the modules) 
 
--Option 2: 
+- Option 2: 
     -Goal 1: explain each subrountine with examples
     - ...
 
