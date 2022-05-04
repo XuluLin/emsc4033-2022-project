@@ -6,6 +6,10 @@
 
 In one to two sentences, explain the background, the broad goals of the project and what the specific outcomes will be.
 
+- Option 1: I use the 'NoisePy' package in Python that automates high-performance computation of ambient noise cross-correlation and stacking in my Honours project. It contains three main source files and two modules to perform its functionalities. I plan to make a tutorial of this package targeted audience who want to know in-depth about how this package runs. 
+
+- Option 2: I use the 'aftan-1.1' package in Fortran that automates the inversion of stacked correlograms into group and phase dispersion curves. It contains two main executable programs to perform its functionalities. I plan to make a tutorial of this package. 
+
 **Example:** _(this is based on the seismic monitoring dashboard that Louis showed). Seismic stations can be used to monitor human noise over the course of the day. Some seismometers stream data live to a server and so this processing can be done in near-real time. In this project I plan to build an online dashboard which processes the data once a day and uploads the results to github as 1) raw data, 2) an image that can be embedded in websites, 3) an updating csv table in github. I also plan to use the github "actions" engine to provide all the necessary processing power._
 
 ## Goals
