@@ -15,11 +15,15 @@ In one to two sentences, explain the background, the broad goals of the project 
 ## Goals
 
 - Option 1: 
+
     -Goal 1: break down each source code into different sub-tasks and decode with examples
+    
     -Goal 2: explain the function calls with examples(often called from the modules) 
 
 - Option 2: 
+
     -Goal 1: explain each subrountine with examples
+    
     - ...
 
 (Write things that you can assess whether they have been accomplished. For example, a goal like “improve visualisation of ocean output” is vague... But a goal that reads “implement functionality to plot streamlines of horizontal velocities in various slices from 3D ocean output” is specific enough.)
