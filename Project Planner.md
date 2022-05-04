@@ -14,11 +14,29 @@ In one to two sentences, explain the background, the broad goals of the project 
 
 ## Goals
 
-- Goal 1
-- Goal 2
-- ...
+- Option 1: 
+    -Goal 1: break down each source code into different sub-tasks and decode with examples
+    -Goal 2: explain the function calls with examples(often called from the modules) 
+
+-Option 2: 
+    -Goal 1: explain each subrountine with examples
+    - ...
 
 (Write things that you can assess whether they have been accomplished. For example, a goal like “improve visualisation of ocean output” is vague... But a goal that reads “implement functionality to plot streamlines of horizontal velocities in various slices from 3D ocean output” is specific enough.)
+
+## Questions
+- Option 1: the package is written in python and I can easily write my tutorial in the same environment. 
+    - Issue 1: In github (https://github.com/mdenolle/NoisePy), they have a short tutorial on how to install and use the package using command lines. However it 
+               does not give details about how it actually runs (the theory and the logic behind the scene). From the user end, this is sufficient, but not for 
+               those who wants to debug/improve or just to understand why the code does what it claims to do. My aim is to address this by writing a detailed
+               tutorial. Does this fulfill the requirements of a project in this course?
+ 
+- Option 2: 
+     - Issue 1: I need to write the tutorial in Fortran. But I cannot run and show each line like in a python environment. What I am thinking about is to make a                     video tutorial with voice-over of what each command is doing. So that I can compile it on the spot and show what the output is. Is this Ok?
+
+My preference is option 1 if it gets your approval because it is just simpler to do. However, option 2 will benefit my project and I learn a lot more in this. 
+What is your suggestions and what is your thought on the issues? 
+
 
 ## Background and Innovation  
 
