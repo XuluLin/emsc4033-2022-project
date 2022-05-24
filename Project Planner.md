@@ -14,32 +14,34 @@ In one to two sentences, explain the background, the broad goals of the project 
 
 - frequency-time normalisation: 
 
-    - Goal 1: read through the theory and research the documentation or manual of possible Python libraries needed (e.g. Hilbert transofrm in Scipy). 
+    - **Goal 1**: read through the theory and research the documentation or manual of possible Python libraries needed (e.g. Hilbert transofrm in Scipy). 
     
     *Timeline: completed by 21/05*
     
-    - Goal 2: write up the normalisation code for one 24-hr windowed raw seismic signal from the vertical component of a single station. This will include   preprocessing of data (demean, detrend, removing earthquake signals if any, check for gaps). 
+    - **Goal 2**: write up the normalisation code for one 24-hr windowed raw seismic signal from the vertical component of a single station. This will include   preprocessing of data (demean, detrend, removing earthquake signals if any, check for gaps). 
     
     *Timeline: completed by 24/05*
     
-    - Goal 3: modify and implement the normalisation code for a longer period (try downloading 1-month of data) for the vertical component of a single station. Not sure if downloading and computation time will be a problem. Adjust the length of period accordingly. 
+    - **Goal 3**: modify and implement the normalisation code for a longer period (try downloading 1-month of data) for the vertical component of a single station. Not sure if downloading and computation time will be a problem. Adjust the length of period accordingly. 
     
     *Timeline: completed by 27/05*
 
-    - Goal 3: Modify and implement the normalisation code for a list of stations for their veritcal-component raw signals for the suitable length of time worked out from Goal 3. Adjust the number of stations according to computational time. 
+    - **Goal 3**: Modify and implement the normalisation code for a list of stations for their veritcal-component raw signals for the suitable length of time worked out from Goal 3. Adjust the number of stations according to computational time. 
 
     *TimeLine: completed by 29/05*
    
-    - Goal 4: Write tests for frquency-time normalisation. They may include testing the exsistence of intermediate products, testing the type of input parameters and outputs, testing the values of intermediate and final products. 
+    - **Goal 4**: Write tests for frquency-time normalisation. They may include testing the exsistence of intermediate products, testing the type of input parameters and outputs, testing the values of intermediate and final products. 
     
     *Timeline: completed by 31/05*
     
     
 ## Background and Innovation  
 
-One-bit and running-mean-average normalisations have been widely used to pre-process the ambient noise raw data. Shen et al. (2012)'s frequency-time normalisation has claimed to boost the signal-to-noise ratio of the correlogram by a factor of 2. The issue with this is 1) they did not make the source code publicly available. 2) they did a test between stations in north-eastern China and the Tibetan plateau (sampling continental lithosphere). I want to code it and test it on Zealanida which is a submerged continent with noise souced from oceanic environement. 
+Ambient noise cross-correlation is an imaging technique that uses the ambient noise wavefield of the Earth (i.e. noise generated from non-earthquake sources such as ocean tides, traffic, human activities etc.) to sample the shallow part of the Earth. This is achieved under the assumption that the ambient noise wavefield of the Earth is contributed by each source equally (i.e. the wavefield is diffuse). This is rarely the case in practice, therefore, we need to normalise the raw signal so that each frequency-dependent content is comparable within a pre-defined range to satisfy this assumption. 
 
-## Resources & Timeline
+One-bit and running-mean-average normalisations have been widely used to pre-process the ambient noise raw data. Shen et al. (2012)'s frequency-time normalisation has claimed to boost the signal-to-noise ratio of the cross-correlation function. The issue with this is 1) they did not make the source code publicly available. 2) they did a test between stations in north-eastern China and the Tibetan plateau (sampling continental lithosphere). I want to code it and test it on Zealanida which is a submerged continent with noise souced from oceanic environement. 
+
+## Resources 
 
 
 ## Testing, validation, documentation
