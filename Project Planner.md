@@ -6,16 +6,16 @@
 
 In one to two sentences, explain the background, the broad goals of the project and what the specific outcomes will be.
 
-- Normalisation is a key step to satisfy the condition of a diffuse wavefield in order to extract Green's function in ambient noise tomography. Shen et al. (2012) proposed an improved method to do such -- frequency-time normalisation. However, the code of this method is not available. The goal of this project is to develop the code in python and implement it for ambient noise cross-correlation. 
+- Normalisation is a key step to satisfy the condition of a diffuse wavefield in order to extract Green's function in ambient noise tomography. Shen et al. (2012) proposed an improved method to do such -- frequency-time normalisation. This proposed method is claimed to have a better signal-to-noise ratio in the cross-correlation function, which will be highly regarded in long-period ambient noise cross-correlation. However, the code of this method is not publicly available. The goal of this project is to develop the code in python and implement it for ambient noise cross-correlation. 
 
 
-**Example:** _(this is based on the seismic monitoring dashboard that Louis showed). Seismic stations can be used to monitor human noise over the course of the day. Some seismometers stream data live to a server and so this processing can be done in near-real time. In this project I plan to build an online dashboard which processes the data once a day and uploads the results to github as 1) raw data, 2) an image that can be embedded in websites, 3) an updating csv table in github. I also plan to use the github "actions" engine to provide all the necessary processing power._
 
-## Goals
+## Goals and Timeline 
 
 - frequency-time normalisation: 
 
-    - Goal 1: read through the theory and identify what packages are needed. 
+    - Goal 1: read through the theory and research the documentation or manual of possible Python libraries needed (e.g. Hilbert transofrm in Scipy). 
+    - Timeline: completed by 22/05
     
     - Goal 2: write up the code and test it with the station pairs in the paper and with several of my catalogue in Zealandia. 
 
