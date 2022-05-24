@@ -15,7 +15,7 @@ In one to two sentences, explain the background, the broad goals of the project 
 - frequency-time normalisation: 
 
     - Goal 1: read through the theory and research the documentation or manual of possible Python libraries needed (e.g. Hilbert transofrm in Scipy). 
-    - Timeline: completed by 22/05
+    *Timeline: completed by 22/05*
     
     - Goal 2: write up the code and test it with the station pairs in the paper and with several of my catalogue in Zealandia. 
 
