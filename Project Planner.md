@@ -50,7 +50,7 @@ The resources available for this project are two-folds:
 
 - The theory of requency-time normalisation. Shen et al. (2012)'s paper provide details on the mathematics of this method, which is everything needed for its implementation. 
 
-- The NoisePy package. This is a package I used in my Honours project which covers the whole process of ambient noise cross-correlation. There are functions available to do pre-processing and cross-correlation. I can take advantage of those for implementing frequency-time normalisation. 
+- The NoisePy package (https://github.com/mdenolle/NoisePy). This is a package I used in my Honours project which covers the whole process of ambient noise cross-correlation. There are functions available to do pre-processing and cross-correlation. I can take advantage of those for implementing frequency-time normalisation. 
 
 ## Testing, validation, documentation
 
