@@ -26,11 +26,11 @@ In one to two sentences, explain the background, the broad goals of the project 
     
     *Timeline: completed by 27/05*
 
-    - **Goal 3**: Modify and implement the normalisation code for a few more stations for their veritcal-component raw signals for the suitable length of time worked out from Goal 3 and compute cross correlation functions. Adjust the number of stations according to computational time. 
+    - **Goal 4**: Modify and implement the normalisation code for a few more stations for their veritcal-component raw signals for the suitable length of time worked out from Goal 3 and compute cross correlation functions. Adjust the number of stations according to computational time. 
 
     *TimeLine: completed by 29/05*
    
-    - **Goal 4**: Write tests for frquency-time normalisation. They may include testing the exsistence of intermediate products, testing the type of input parameters and outputs, testing the values of intermediate and final products. 
+    - **Goal 5**: Write tests for frquency-time normalisation. They may include testing the exsistence of intermediate products, testing the type of input parameters and outputs, testing the values of intermediate and final products. 
     
     *Timeline: completed by 31/05*
     
