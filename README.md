@@ -22,3 +22,8 @@ There are 4 modules (.py file) and a notebook (.ipynb file) for frequency-time n
 
 - tests: `test_FTN.py` and `run_test_FTN.ipynb`. 
 
+
+## Reference 
+Shen, Y., Ren, Y., Gao, H. and Savage, B. (2012). An Improved Method to Extract Very‐Broadband Empirical Green’s Functions from Ambient Seismic Noise. Bulletin of the Seismological Society of America, [online] 102(4), pp.1872–1877. doi:10.1785/0120120023.
+
+
