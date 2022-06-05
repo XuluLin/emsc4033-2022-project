@@ -7,7 +7,7 @@ Xulu Lin (u6989382)
 This repository contains Python scripts for frequency-time normalisation (Shen et al., 2012). Frequency-time normalisation is an improved normalisation method for ambient-noise cross correlation. The paper provides a detailed explanation of the theory. However, the code is not made available publicly. The Python scripts in this repository are written for users that need comprehensive modules to implement frequency-time normalisation. 
 
 ## Installation
-You will need Python to execute the modules. Follow this link to download Python https://www.python.org/downloads/. Note that it is written and tested in the 'Jupyter notebook' interactive Web-based platform with ipython kernel. It is not written for command-line environment. You will also need multiple pre-installed Python packages. Please refer to `src/dependencies.py` for more details. 
+You will need Python to execute the modules. Follow this link to download Python https://www.python.org/downloads/. Note that it is written and tested in the 'Jupyter notebook' 6.3.0 interactive Web-based platform with ipython kernel. It is not written for command-line environment. You will also need multiple pre-installed Python packages. Please refer to `src/dependencies.py` for more details. 
 
 ## Functionality 
 There are 4 modules (.py file) and a notebook (.ipynb file) for frequency-time normalisation, 1 testing module and 1 testing notebook. 
