@@ -54,5 +54,10 @@ The resources available for this project are two-folds:
 
 ## Testing, validation, documentation
 
+- Testing and validation: I can think of 3 main tests that can be implemented across all functions to 1) check whether the function is in the module; 2) check whether the input and output types are as expected; 3) check whether the results are accurate where possible (validation). 
+
+- The validation part is something that needs to be paid more attention on, because some of the function will just be plotting and it will be hard to validate their accuracy. It might be only applicable to some functions that return numerical values. 
+
+- Documentation: each function will be documented by docstring specifying the purpose of the function, the type and meaning of the input and output. It will be further supplemented by comments inside the functions where necessary to explain specific steps. 
 
 
