@@ -45,7 +45,13 @@ If Python is installed via Anaconda, most of them will have been installed. Inst
 - from obspy.clients.fdsn import Client
 
 ## Testing 
+As mentioned in ProjectPlanner.md, with practical needs, there are four tests in 'test_FTN.py': the existence of the function, the type of input and output, the accuracy of the output, and exception handling. 
 
+- the existence of the function the type of input and output are tests for all function using `assert`. But to avoid triviality, for functions that have inputs from previous functions, or for function with inpputs being the outputs of previous functions, types of inputs and outputs are no longer tested. 
+
+- tests for the accuracy of output(s) are implemented for functions that returns numerical results. This includes target_frequency and target_frequency_window in `nomalisation.py`. These two functions returns the targeted frequency range and the upper and lower bounds of each frequency window respectively. A simple test case with known output was passed through the functions. Although other functions that perform filtering and Hilbert transform in `normalisation.py` also output numerical results, it is hard to write test to check their accuracy because there are no simple test inputs with known output. 
+
+- some functions include exceptions because of the workflow of this repository. Many functions are dependent on outputs of previous functions so notifying the user whether the output is empty or not is crucial for debugging. Hence, exceptions of empty lists/arrays are raised in modules where appropriate. In tests, these are tested using `pytest.raises(ErrorName)` with inputs that delibrately give empty outputs and ValueError is expected to be raised. If the exception is succesfully raised, the test will be passed and vice versa. 
 
 
 ## Limitations and future improvements 
