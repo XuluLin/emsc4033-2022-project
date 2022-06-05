@@ -12,7 +12,7 @@ You will need Python to execute the modules. Note that it is written and tested 
 ## Functionality 
 There are 4 modules (.py file) and a notebook (.ipynb file) for frequency-time normalisation, 1 testing module and 1 testing notebook. 
 
-- `dependencies.py`: contains all the required pre-installed Python packages. 
+- import all the required pre-installed Python packages: `dependencies.py`.
 
 - download and pre-processing: `download_raw_data.py` and `processing.py`. 
 
