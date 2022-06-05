@@ -21,9 +21,9 @@ The following is a list of Python packages that need to be pre-installed.
 
 If Python is installed via Anaconda, most of them will have been installed. Installation links or instructions will be provided after packages that the author needed to manually install. Different users may need to manually install different packages. Some packages will not be used for this normalisation method but will be good to have for ambient-noise cross correlation. 
 
-import os 
-import glob
-import copy
+- import os 
+- import glob
+- import copy
 import obspy (Python framework for processing seismological data: https://anaconda.org/conda-forge/obspy)
 import scipy
 import time
