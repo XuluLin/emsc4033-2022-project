@@ -1,8 +1,3 @@
-Instructions	
-List of dependencies	
-Describe testing	
-Limitations / Future Improvments	
-
 
 # Report
 
@@ -13,7 +8,7 @@ Normalisation is a key step to satisfy the condition of a diffuse wavefield in o
 The overall objective of this project is to implement frequency-time normalisation and make it available for public access. Python was chosen as the coding language because it is the most widely used, free scientifically programming language, and there are well-developed mathematical and signal processing packages available.
 
 ## Instructions 
-README.md has detailed instructions about installation and functionality of this repository. The main script `FTN.ipynb` provides detailed guided instructions to define user's inputs and to use the modules. 
+README.md has detailed instructions about installation and functionality of this repository. The main script `FTN.ipynb` provides detailed guided instructions to define user's inputs and to use the modules. A brief outline of the workflow of this project is: download -> pre-process -> filter -> normalisation. 
 
 ## List of dependencies
 
@@ -55,5 +50,8 @@ As mentioned in ProjectPlanner.md, with practical needs, there are four tests in
 
 
 ## Limitations and future improvements 
+The major limitation of this project lies in its generalisability. Ambient-noise cross correlation is an imaging technique that generally requires years of data from tens to hundreds of stations. The modules in this repository have been only tested on two to three stations and on hour-long data with consideration of computational time and processing capacity of local machines. Future improvements need to be invested in testing the modules on more stations and longer duration, which will likely involve parallel computing on a remote server. Then modifying these scripts incorporating the use of MPI (https://mpi4py.readthedocs.io/en/stable/) is essential to implement on multiple processors. 
+
+Another major limitation lies in the biggest difficulty encountered when writing the modules. Obspy offers built-in function to do butterworth filtering, which is required in the pre-processing stage. However, the output of this built-in butterworth filtering is an Obspy trace object. Later when it is passed through Hilbert transform, errors will occur because it takes numpy array as its argument. Hence, I built my own butterworth bandpass filter with the scipy signal processing package that takes Obspy trace as an input and outputs numpy.ndarray object. Future work can be done to find a way to resolve the type incompatibility because using Obspy built-in butterworth filter will simplifies the code significantly. 
 
 
