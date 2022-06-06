@@ -37,12 +37,14 @@ from scipy.signal import butter, lfilter
 def target_frequency (chan, freqmin, freqmax):
     '''This function returns the target frequency range for FTN dependent on the type of instrument.
        
-       Parameters: 
+       PARAMETERS:
+       ------------------------
        chan (string): the type of instrument. 'HHZ' 'BHZ' or 'LHZ'. (Only vertical component is considered in this project)
        freqmin (float): the minimum frequency used to DOWNLOAD raw data.
        freqmax (float): the maximum frequency used to DOWNLOAD raw data.
        
-       Returns: 
+       RETURNS:
+       -------------------------
        (freq_low, freq_high): a tuple of targeted frequency range to do FTN. 
     '''
     
@@ -96,12 +98,14 @@ def target_frequency (chan, freqmin, freqmax):
 def target_frequency_window(chan, freqmin, freqmax):
     '''This function slices the target frequency range for each frequency window.
        
-       Parameters: 
+       PARAMETERS:
+       -------------------------
        chan (list): the type of instrument. 'HHZ' 'BHZ' or 'LHZ'. (Only vertical component is considered in this project)
        freqmin: the minimum frequency used to DOWNLOAD raw data.
        freqmax: the maximum frequency used to DOWNLOAD raw data.
        
-       Returns: 
+       RETURNS:
+       --------------------------
        frange (list of tuples): a list of lowest & highest frequencies for each frequency window. 
     '''
     
@@ -128,13 +132,15 @@ def target_frequency_window(chan, freqmin, freqmax):
 def butter_bandpass(lowcut, highcut, fs, order=2):
     '''This function returns the parameters for a butterworth filter. 
     
-       Parameters: 
+       PARAMETERS:
+       -------------------------
        lowcut (float): the lowest frequency of a butterworth filter
        highcut (float): the highest frequency of a butterworth filter
        fs (float): sample frequency 
        order (float): the order of a butterworth filter. Default is 2 which gives the best normalisation results. 
        
-       Returns: 
+       RETURNS:
+       ---------------------------
        b (numpy ndarray): the numerator of a butterworth filter
        a (numpy ndarrya): the denominator of a butterworth filter
     
@@ -149,14 +155,16 @@ def butter_bandpass(lowcut, highcut, fs, order=2):
 def butter_bandpass_filter(data, lowcut, highcut, fs, order=2):
     '''This function returns the butterworth-filtered data. 
     
-       Parameters: 
+       PARAMETERS:
+       ---------------------
        data (obspy trace): the unfiltered obspy trace data 
        lowcut (float): the lowest frequency of a butterworth filter
        highcut (float): the highest frequency of a butterworth filter
        fs (float/int): sample frequency 
        order (float/int): the order of a butterworth filter. Default is 2 which gives the best normalisation results. 
        
-       Returns: 
+       RETURNS:
+       ----------------------
        y (numpy ndarray): the butterworth-filtered data
     
     '''
@@ -173,12 +181,14 @@ def butter_bandpass_filter(data, lowcut, highcut, fs, order=2):
 def normalisation_filtering(target_frequency_window, samp_freq, ntr):
     '''This function performs filtering for normalisation. 
     
-       Parameters: 
+       PARAMETERS:
+       --------------------------
        target_frequency_window (list): all the possiible frequency windows for filtering within the desired range
        samp_freq (float): sampling frequency
        ntr (numpy ndarray): the pre-proccessed data
        
-       Returns:
+       RETURNS:
+       --------------------------
        filtered_list (list): filtered waveform for each frequency window. 
        
     '''
@@ -204,12 +214,14 @@ def freq_time_normalisation(target_frequency_window, samp_freq, ntr):
        envelope function after Hilbert transform for each target_frequency_window. The formula can be referred to 
        https://pubs.geoscienceworld.org/ssa/bssa/article/102/4/1872/325525/an-improved-method-to-extract-very-broadband.
        
-       Parameters: 
+       PARAMETERS:
+       ------------------------
        target_frequency_window (list): all the possiible frequency windows for filtering within the desired range
        samp_freq (float): sampling frequency
        ntr (numpy ndarray): the pre-proccessed data
        
-       Returns: 
+       RETURNS:
+       -------------------------
        ntr_list (list): contains all the normalised segments for each frequency window. 
     '''
     #call the previous function to obtain filtered waveform
